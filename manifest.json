@@ -1,21 +1,22 @@
 {
-	"name": "crossbeats REV. Score Data Extractor",
-	"version": "0.0.2",
+	"name": "crossbeats REV. SUNRiSE Score Data Extractor",
+	"version": "1.0.3",
 	"manifest_version": 2,
 	"permissions": [
 		"tabs",
 		"clipboardRead"
 	],
-	"description": "crossbeats REV. のユーザサイトからスコアデータ一覧をクリップボードにコピーします",
+	"description": "crossbeats REV. SUNRISE のユーザサイトからスコアデータ一覧をクリップボードにコピーします",
 	"background": {
 		"page": "background.html"
 	},
 	"page_action": {
+		"default_icon": "icon.png",
 		"default_title": "cbrev playdata export"
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://rev-www.ac.capcom.jp/playdatamusic"],
+			"matches": ["https://rev-srw.ac.capcom.jp/playdatamusic"],
 			"js": ["jquery-2.1.3.min.js", "content.js"]
 		},
 		{

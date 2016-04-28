@@ -1,6 +1,6 @@
 // page_action iconの表示
 chrome.tabs.onUpdated.addListener(function(id, changeInfo, tab) {
-	if (tab.url == "https://rev-www.ac.capcom.jp/playdatamusic" || tab.url == "https://rev-www.ac.capcom.jp/rplist" ) {
+	if (tab.url == "https://rev-srw.ac.capcom.jp/playdatamusic" || tab.url == "https://rev-www.ac.capcom.jp/rplist" ) {
 		chrome.pageAction.show(tab.id);
 	}
 });

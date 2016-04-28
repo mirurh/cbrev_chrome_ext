@@ -53,8 +53,6 @@ function getMusicData()
     			var title = $(data).find("div.pdMusicDetail.gr-Black > div > p.title").text().trim();
     			// Artist
     			var artist = $(data).find("div.pdMusicDetail.gr-Black > div > p.author").text().trim();
-    			// Bpm
-    			var bpm = $(data).find("div.pdMusicDetail.gr-Black > div > p.bpm").text().replace("BPM", "").trim();
     
     			outputText += title + "\t" + artist + "\t";
     
@@ -68,12 +66,6 @@ function getMusicData()
     				
     				// RP
     				var rp = $(this).find("div.leftResult > dl > dd:nth-child(6)").text().trim();
-
-    				// Level
-    				var level = $(this).find("div.pdm-resultHead > p.lv").text().replace("Lv.", "").trim();
-    
-    				// Notes
-    				var notes = $(this).find("div.pdm-resultHead > p.note").text().replace("Note:", "").trim();
     
     				// ULT CLEAR
     				var gaugeTypeImage = $(this).find("div.rightResult > ul > li.clear > p > img").attr("src");
