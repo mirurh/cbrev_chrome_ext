@@ -147,9 +147,9 @@ function getMusicData()
     				}
                     
     				// FULL COMBO
-    				var fullComboImage = $(this).find("div.rightResult > ul > li.fullcombo > img").attr("src");
+    				var fullComboImage = $(this).find("div.rightResult > ul > li.fullcombo > span.ico-fullcombo").length;
     				var fullCombo = "";
-    				if(fullComboImage != undefined)
+    				if(fullComboImage === 1)
     				{
     					fullCombo = "FC";
     				}
